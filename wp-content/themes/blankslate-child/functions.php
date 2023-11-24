@@ -28,3 +28,10 @@ function my_theme_add_stylesheet() {
 	wp_enqueue_style( 'my-style', get_stylesheet_directory_uri() . '/style.css', false, '1.0', 'all' );
     wp_enqueue_script( 'script-name', get_stylesheet_directory_uri() . '/assets/js/main.js', array(), '1.0.0', true );
 }
+add_filter( 'wp_nav_menu_items', 'add_extra_item_to_nav_menu', 10, 2 );
+function add_extra_item_to_nav_menu( $items, $args ) {
+    if (is_user_logged_in() && $args->theme_location == "main-menu") {
+        $items = '<li class="menu-item"><a href="'.get_admin_url().'">Admin</a></li>'.$items;
+    }
+    return $items;
+}

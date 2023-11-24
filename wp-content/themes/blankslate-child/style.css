@@ -40,7 +40,7 @@ a {
     src: url("https://anima-uploads.s3.amazonaws.com/projects/60302a5b4dd20a853647f200/fonts/librebaskerville-bold.ttf") format("truetype");
 }
 
-@media (max-width: 768px)
+@media (max-width: 320px)
  {
   .feuilles-droite {
     display: none;
@@ -48,8 +48,41 @@ a {
   .feuilles-gauche {
     display: none;
   }
-  
-   
+  .feuillesequipe {
+    display: none;
+  }
+  .page-id-27 .formcontact {
+    margin: 0 !important;
+    padding-left: 0 !important;
+  }
+  .page-id-29 .ff-t-column-2 {
+    border-left: none !important;
+  }
+  .menu-nav {
+    width: 80% !important;
+  }
+  .menu-item {
+    width: 100% !important;
+  }
+  .logo {
+    width: 48% !important;
+  }
+  .logo img {
+    width: 100% !important;
+  }
+  .texte2 {
+    width: unset !important;
+    font-size: 14px !important;
+  }
+  .titrecitron, .titrefraise, .titrepamplemousse, .titreframboise {
+    font-size: 14px !important;
+  }
+  .page-id-27 .formcontact {
+    width: 100% !important;
+  }
+  .page-id-29 .trai {
+    display: none;
+  }
 }
 
 .container {
@@ -214,6 +247,7 @@ display: flex;
 text-align: right;    
 }
 .menu{
+    font-family: syne;
     width: 100%;
     display: flex;
     justify-content: right;
@@ -230,6 +264,7 @@ text-align: right;
     height: 100vh;
     padding-left: 21%;
     padding-right: 21%;
+    block-size: auto;
   }
   .colonne-background{
     background-image:url("assets/images/Rectangle-blanc.png") ;
@@ -434,8 +469,8 @@ font-weight: 800;
 line-height: normal;
 text-transform: uppercase;
 }
-.page-id-29 {
-    background: #3B8E46;
+.page-id-29 #container{
+    background-color: #3B8E46 !important;
 }
 .page-id-29 .trai {
     margin-left: 26%;
@@ -451,7 +486,7 @@ margin-left: 26%;
 }
 span {cursor:pointer; }
 .number{
-    margin:100px;
+    margin:1px;
 display: flex;
 }
 .boutons{
@@ -459,24 +494,120 @@ display: flex;
 flex-direction: column;
 }
 .minus1, .minus2, .minus3, .minus4, .plus1 ,.plus2 ,.plus3 ,.plus4{
-    width:20px;
-    height:20px;
-    background:#f2f2f2;
-    border-radius:4px;
-    padding:8px 5px 8px 5px;
-    border:1px solid #ddd;
+width: 39px;
+height: 29px;
+background: #E0B9B4;
+border-radius: 7px;
+padding: 8px 5px 8px 5px;
 display: inline-block;
 vertical-align: middle;
 text-align: center;
 margin-top: 3px;
+border-radius: 0 10px 10px 0;
+margin-top: 1px;
+margin-left: -1px;
 }
 .input1, .input2 ,.input3 ,.input4{
-    height:78px;
-width: 100px;
+    height:60px;
+width: 60px;
 text-align: center;
 font-size: 26px;
-    border:1px solid #ddd;
-    border-radius:4px;
+border:1px solid #ddd;
+border-radius:4px;
 display: inline-block;
 vertical-align: middle;
+border-radius: 10px 0 0 10px!important; 
+}
+.page-id-29 .footer-background-image {
+    display: none;
+}
+.page-id-29 .commande {
+    margin-left: 25%;
+    margin-right: 17%;
+    padding-right: 6%;
+}
+.minus1, .minus2, .minus3, .minus4 {
+    border-radius: 0 0 10px 0;
+    border-top: solid #FFF;
+}
+.plus1 ,.plus2 ,.plus3 ,.plus4 {
+    border-radius: 0 10px 0 0;
+}
+.page-id-29 .boutonok {
+    display: flex;
+    width: 100px;
+    height: 100%;
+    padding: 0;
+    justify-content: center;
+     
+}
+.page-id-29 .boutonscomm {
+    padding-top: 10px;
+}
+.page-id-29 .colonnevosinfos {
+    margin-right: 13%;
+}
+.page-id-29 .texteh3 {
+    color: #FFF;
+font-family: Syne;
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.page-id-29 .colonneformulaire {
+    padding-left: 26%;
+}
+.page-id-29 .texteform{
+    font-family: Syne;
+}
+.page-id-29 .boutonscomm .wp-block-buttons {
+    height: 100%;
+}
+.page-id-29 .boutonok a{
+   padding:  calc(0.667em + 9px) calc(1.333em + 2px);
+}
+.page-id-29 .formulairecommande {
+    width: 56%;
+    margin: 0 auto;
+} 
+.page-id-29 .colonnecommandedroite {
+    margin-left: 11%;
+}
+.page-id-29 .colonnecommandegauche {
+    padding-left: 14%;
+}
+.page-id-29 .boutoncommander {
+    padding-left: 5%;
+}
+.page-id-29 .boutoncommanderstyle {
+    background-color: #E0B9B4 !important;
+    margin-top: 2%;
+}
+.page-id-29 .fluentform .ff-el-input--label {
+    font-family: syne;
+    color: #FFF;
+}
+.page-id-29 .infos {
+    padding-left: 14%;
+}
+.page-id-29 .ff-t-column-2 {
+    border-left: 1px solid #ffffff;
+    margin-left: 3%;
+}
+.page-id-27 .boutoncommanderstyle {
+    background-color: #E0B9B4 !important;
+    position: relative;
+    bottom: -18px;
+}
+.page-id-27 .formcontact {
+    width: 29%;
+    margin: 0 auto;
+    padding-left: 30%;
+}
+.page-id-27 .feuilles5{
+    position: relative;
+    left: 25%;
+    bottom: 145px;
+    z-index: -1;
 }
